@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_facebook"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginTop="@dimen/edt_magin_top"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:padding="@dimen/text_padding"
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_email_phone"/>
+
+        <EditText
+            android:inputType="textPassword"
+            android:padding="@dimen/text_padding"
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/hint_pass"/>
+        <Button
+            android:textSize="@dimen/text_size_large"
+            android:textAllCaps="false"
+            android:padding="@dimen/text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_login"
+            android:textColor="@color/white"
+            android:background="@color/blue_dark"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv"
+        android:padding="@dimen/text_padding"
+        android:textSize="@dimen/text_size_small"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:text="@string/text_sing_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_chamhoi"
+       android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv"
+        android:layout_marginRight="@dimen/edt_magin_right"
+
+        />
+
+</RelativeLayout>
