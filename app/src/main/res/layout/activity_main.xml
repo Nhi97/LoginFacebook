@@ -1,77 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/blue"
     tools:context=".MainActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/image_facebook"
-        android:layout_marginRight="@dimen/edt_magin_right"
+        android:layout_marginBottom="@dimen/edt_magin_bottom"
         android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
         android:layout_marginTop="@dimen/edt_magin_top"
-        android:layout_marginBottom="@dimen/edt_magin_bottom"/>
+        android:background="@drawable/image_facebook" />
+
     <LinearLayout
         android:id="@+id/linear"
-        android:layout_centerInParent="true"
-        android:layout_marginRight="@dimen/edt_magin_right"
-        android:layout_marginLeft="@dimen/edt_magin_left"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/edt_magin_left"
+        android:layout_marginRight="@dimen/edt_magin_right"
+        android:orientation="vertical">
 
         <EditText
-            android:padding="@dimen/text_padding"
-            android:layout_marginBottom="@dimen/edt_magin_bottom"
-            android:background="@color/white"
-            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email_phone"/>
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:background="@drawable/edit_text"
+            android:hint="@string/hint_email_phone"
+            android:padding="@dimen/text_padding"
+            android:textColor="@color/black" />
 
         <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/edt_magin_bottom"
+            android:background="@drawable/edit_text"
+            android:hint="@string/hint_pass"
             android:inputType="textPassword"
             android:padding="@dimen/text_padding"
-            android:layout_marginBottom="@dimen/edt_magin_bottom"
-            android:background="@color/white"
-            android:textColor="@color/black"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:textColor="@color/black" />
 
-            android:hint="@string/hint_pass"/>
         <Button
-            android:textSize="@dimen/text_size_large"
-            android:textAllCaps="false"
-            android:padding="@dimen/text_padding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:padding="@dimen/text_padding"
             android:text="@string/text_login"
+            android:textAllCaps="false"
             android:textColor="@color/white"
-            android:background="@color/blue_dark"/>
+            android:textSize="@dimen/text_size_large" />
 
     </LinearLayout>
+
     <TextView
         android:id="@+id/tv"
-        android:padding="@dimen/text_padding"
-        android:textSize="@dimen/text_size_small"
-        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/text_padding"
         android:text="@string/text_sing_in"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_small" />
+
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/image_chamhoi"
-       android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
         android:layout_alignTop="@id/tv"
         android:layout_marginRight="@dimen/edt_magin_right"
+        android:background="@drawable/image_chamhoi"
 
         />
 
